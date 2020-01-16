@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Pizza} from '../models/pizza';
+
 
 @Component({
   selector: 'app-pizza-list-item',
@@ -7,10 +8,8 @@ import {Pizza} from '../models/pizza';
   styleUrls: ['./pizza-list-item.component.css']
 })
 export class PizzaListItemComponent implements OnInit {
-  pizza: Pizza = {
-        nome: 'Margherita',
-        descrizione: 'Pomodoro, mozzarella, olio'
-  };
+  @Input() pizzaInput: Pizza;
+
 
   constructor() { }
 
