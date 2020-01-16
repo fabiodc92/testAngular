@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'applicationTest';
+  progress = 0;
+  progress2 = 0;
+
+
+  updateProgress(value: number): void {
+    this.progress += value;
+  }
+  updateProgress2(value: number): void {
+    this.progress2 += value;
+  }
 }

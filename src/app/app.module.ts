@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import {PizzaModule} from './pizza/pizza.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PizzaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
