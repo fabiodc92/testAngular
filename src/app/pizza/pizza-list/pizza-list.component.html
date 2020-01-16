@@ -1,1 +1,4 @@
-<app-pizza-list-item *ngFor="let pizza of pizze" [pizzaInput]="pizza"></app-pizza-list-item>
+<app-pizza-list-item
+  *ngFor="let pizza of pizze"
+  [pizzaInput]="pizza"
+  (click) = "onSelectPizza(pizza)"></app-pizza-list-item>

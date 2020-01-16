@@ -5,6 +5,8 @@ import { PizzaListItemComponent } from './pizza-list-item/pizza-list-item.compon
 import { PizzaSearchComponent } from './pizza-search/pizza-search.component';
 import { PizzaDiscountPipe } from './pizza-discount.pipe';
 import {PizzaService} from './pizza.service';
+import {PizzaRoutingModule} from './pizza.routing';
+import { PizzaDetailsComponent } from './pizza-details/pizza-details.component';
 
 
 
@@ -13,11 +15,13 @@ import {PizzaService} from './pizza.service';
     PizzaListComponent,
     PizzaListItemComponent,
     PizzaSearchComponent,
-    PizzaDiscountPipe],
+    PizzaDiscountPipe,
+    PizzaDetailsComponent],
   exports: [
     PizzaListComponent
   ],
   imports: [
+    PizzaRoutingModule,
     CommonModule
   ],
   providers: [
