@@ -17,7 +17,6 @@ export class PizzaListComponent implements OnInit {
   ngOnInit() {
     this.pizze = this.pizzaService.getAll();
   }
-
   onSelectPizza(pizza: Pizza) {
     this.selectedPizza = pizza;
     this.router.navigate(['detailsPizza/' + this.selectedPizza.nome]);
